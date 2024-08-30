@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calcular Descuento</title>
 </head>
 <body>
+    <h1>Calculadora de Descuento</h1>
     
+    <label for="precio">Precio del artículo:</label>
+    <input type="number" id="precio" step="0.01" placeholder="Ingrese el precio"><br><br>
+
+    <label for="descuento">Porcentaje de descuento (%):</label>
+    <input type="number" id="descuento" step="0.01" placeholder="Ingrese el descuento"><br><br>
+
+    <button onclick="calcularDescuento()">Calcular</button>
+    
+    <h2>Resultados:</h2>
+    <p id="resultado"></p>
+
+    <script src="funciones.js"></script>
 </body>
 </html>
